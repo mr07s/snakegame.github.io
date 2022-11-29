@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Baloo+2:wght@700&family=Boogaloo&family=Peralta&family=Playfair+Display&family=Silkscreen&family=Source+Code+Pro&family=Tapestry&family=Ubuntu:ital,wght@1,300&family=Varela+Round&family=Water+Brush&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    background: url("../img/bg.jpg");
+    /* background-color: red; */
+    min-height: 100vh;
+     background-size: 100vw 100vh;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+#board{
+    background: linear-gradient(rgb(164, 244, 233),rgb(253, 253, 192));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+
+/* background-color: red; */
+background: linear-gradient(red ,yellow);
+border: 2px solid purple;
+transform: scale(1.02);
+border-radius: 7px;
+
+
+}
+
+.snake{
+    background-color:rgb(187, 16, 187);
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+
+
+.food{
+    background: linear-gradient(red, rgb(244, 11, 244));
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Rubik Distressed', cursive;
+    /* font-family: 'Varela Round', sans-serif; */
+}
+#hiscoreBox{
+
+
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Rubik Distressed', cursive;
+
+}
+
+
